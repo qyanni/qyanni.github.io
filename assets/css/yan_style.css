@@ -1,0 +1,321 @@
+
+.main-timeline {
+    position: relative
+}
+
+/* line in middle */
+.main-timeline:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: #c6c6c6;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: 450px
+}
+
+/* space between text blocks */
+.main-timeline .timeline {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative
+}
+
+.main-timeline .timeline:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+/*
+.main-timeline .icon {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.main-timeline .icon:before,
+.main-timeline .icon:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.33s ease-out 0s
+}
+
+
+.main-timeline .icon:before {
+    background: #fff;
+    border: 2px solid #613a43;
+    left: -2px
+}
+
+.main-timeline .icon:after {
+    border: 2px solid #c6c6c6;
+    left: 3px
+}
+
+
+.main-timeline .timeline:hover .icon:before {
+    left: 2px
+}
+
+.main-timeline .timeline:hover .icon:after {
+    left: -2px
+}
+*/
+
+/* i think the circle positioning */
+.main-timeline .date-content {
+    width: 25%;
+    float: left;
+    margin-top: 22px;
+    position: relative
+}
+
+/* connection lines*/
+.main-timeline .date-content:before {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: #c6c6c6;
+    margin: auto 0;
+    position: absolute;
+    top: 55px;
+    right: 1px;
+    bottom: 0px
+}
+
+/* -----HERE FOR POSITIONING OF BLOCKS ----*/
+.main-timeline .date-outer {
+    width: 125px;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    z-index: 1
+}
+
+.main-timeline .date-outer:before,
+.main-timeline .date-outer:after {
+    content: "";
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.33s ease-out 0s
+}
+
+.main-timeline .date-outer:before {
+    background: #fff;
+    border: 2px solid #613a43;
+    left: -6px
+}
+
+.main-timeline .date-outer:after {
+    border: 2px solid #c6c6c6;
+    left: 6px
+}
+
+.main-timeline .timeline:hover .date-outer:before {
+    left: 6px
+}
+
+.main-timeline .timeline:hover .date-outer:after {
+    left: -6px
+}
+
+.main-timeline .date {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 0
+}
+
+.main-timeline .month {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color: #6c6c6c;
+
+}
+
+.main-timeline .hyphen {
+    writing-mode: vertical-lr;
+    font-size: 30px;
+    font-weight: -10;
+    color: #6c6c6c;
+}
+
+
+.main-timeline .year {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color:  #6c6c6c;
+}
+
+.main-timeline .timeline-content {
+    width: 80%;
+    padding: 0px 0 20px 70px;
+    float: right
+}
+
+.main-timeline .title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0px 0 12px 0
+}
+
+.main-timeline .degree_text {
+    font-size: 15px;
+    line-height: 7px;
+    color: #b4b4b4; 
+  }
+
+.main-timeline .location {
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 10;
+    line-height: 2px;
+    margin: 0 0 11px 0
+}
+
+.main-timeline .description {
+    font-size: 14px;
+    text-align: left;
+    text-justify: inter-word;
+    margin-bottom: 0
+}
+
+/*
+.main-timeline .timeline:nth-child(2n) .date-content {
+    float: left
+}
+
+.main-timeline .timeline:nth-child(2n) .date-content:before {
+    right: 1px
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-content {
+    padding: 20px 0px 20px 70px;
+    text-align: left;
+}
+*/
+
+@media only screen and (max-width: 1200px) {
+    .main-timeline .date-content {
+        margin-top: 35px
+    }
+    .main-timeline:before {
+        margin: 0;
+        left: 185px
+    }
+    .main-timeline .date-content:before {
+        width: 22.5%
+    }
+
+    .main-timeline .timeline-content {
+        padding: 0px 0 10px 60px
+    }
+    .main-timeline .title {
+        font-size: 20px;
+        
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .main-timeline .date-content {
+        margin-top: 35px
+    }
+    .main-timeline:before {
+        margin: 0;
+        left: 162px
+    }
+    .main-timeline .date-content:before {
+        width: 22.5%
+    }
+
+    .main-timeline .timeline-content {
+        padding: 10px 0 10px 50px
+    }
+    .main-timeline .title {
+        font-size: 20px;
+        
+    }
+    
+    /*
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        padding: 0px 0px 10px 0
+    }
+    */
+}
+
+@media only screen and (max-width: 767px) {
+    .main-timeline:before {
+        margin: 0;
+        left: 7px
+    }
+    .main-timeline .timeline {
+        margin-bottom: 20px
+    }
+    .main-timeline .timeline:last-child {
+        margin-bottom: 0
+    }
+    /*
+    .main-timeline .icon {
+        margin: auto 0
+    }
+    */
+    .main-timeline .date-content {
+        width: 95%;
+        float: right;
+        margin-top: 5
+    }
+    .main-timeline .date-content:before {
+        display: none
+    }
+    .main-timeline .date-outer {
+        width: 110px;
+        height: 110px
+    }
+    .main-timeline .date-outer:before,
+    .main-timeline .date-outer:after {
+        width: 110px;
+        height: 110px
+    }
+    .main-timeline .date {
+        top: 21%
+    }
+    .main-timeline .year {
+        font-size: 15px
+    }
+    
+    /* .main-timeline .timeline:nth-child(2n) .timeline-content */
+    .main-timeline .timeline-content{
+        width: 95%;
+        text-align: left;
+        padding: 15px 0
+    }
+    .main-timeline .title {
+        margin-bottom: 10px
+    }
+}
