@@ -1,16 +1,17 @@
 ---
-name: V2ReID - Vision-Outlooker-Based Vehicle Re-Identification
+name: V2ReID - Vision Outlooker Based Vehicle ReIdentification
 tools: [python, PyTorch]
 image: "/assets/img/tutorial_v2reid/v2reid_banner.png" 
-description: 
+description: How to use and train V2ReID  
 ---
-
 
 
 
 <figure>
   <img src="{{site.baseurl}}/assets/img/tutorial_v2reid/v2reid_banner.png" class="figure-img img-fluid rounded" alt="" style="width:70%">
 </figure>
+
+
 
 
 

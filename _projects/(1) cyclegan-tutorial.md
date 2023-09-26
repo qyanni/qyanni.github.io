@@ -1,20 +1,20 @@
 ---
 name: CycleGAN - A Tutorial in PyTorch
 tools: [python, PyTorch]
-image: "/assets/img/tutorial_cyclegan/tutorial_cyclegan.png" 
+image: "/assets/img/tutorial_cyclegan/cyclegan_banner.png" 
 description: How to use CycleGAN withouth diving into the code
 ---
 
 
 
 <figure>
-  <img src="{{site.baseurl}}/assets/img/tutorial_cyclegan/tutorial_cyclegan.png" class="figure-img img-fluid rounded" alt="" style="width:50%">
+  <img src="{{site.baseurl}}/assets/img/tutorial_cyclegan/cyclegan_banner.png" class="figure-img img-fluid rounded" alt="" style="width:70%">
 </figure>
 
 
-In this tutorial, I will go through how to use CycleGAN for your project. For more information on CycleGAN, please have a look at my post on [CycleGAN](http://127.0.0.1:4001/blog/cyclegan-model) or the [infographic](http://127.0.0.1:4001/infographics/cyclegan). 
+In this tutorial, I will go through how to use CycleGAN for your project. For more information on CycleGAN, please have a look at my post on [CycleGAN](https://qyanni.github.io/blog/cyclegan-model) or the [infographic](https://qyanni.github.io/infographics/cyclegan). 
 
-{% include elements/highlight.html text="change links" %}
+
 
 
 {% capture list_items %}
